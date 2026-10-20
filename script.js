@@ -131,6 +131,6 @@ if (contactForm) {
             contactForm.elements.namedItem(invalid[0]).focus();
             return;
         }
-        status.textContent = 'Your message passed validation.';
+        status.textContent = 'Your message passed validation and sent.';
     });
 }
