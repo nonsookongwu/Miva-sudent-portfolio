@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="Chukwunonso’s sample student portfolio, projects and academic planner."
+    />
+    <title>Academic planner | Chukwunonso</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header wrap">
+      <a class="brand" href="index.html" aria-label="Chukwunonso home"
+        >
+        <span
+          >Chukwunonso<span class="brand-sub"
+            >STUDENT &amp; SOFTWARE ENGINEER</span
+          ></span
+        ></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a><a href="about.html">About me</a
+        ><a href="projects.html">Projects</a
+        ><a href="planner.html" aria-current="page">Academic planner</a
+        ><a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main id="main" class="wrap">
+      <section class="page-heading">
+        <p class="eyebrow">03 / ACADEMIC PLANNER</p>
+        <h1>A little structure.<br /><em>More room to grow.</em></h1>
+        <p class="lede">
+          Make space for what matters. Add your tasks and celebrate each one you
+          finish.
+        </p>
+      </section>
+      <section class="planner-layout section">
+        <div class="planner-panel">
+          <h2>My tasks</h2>
+          <form id="task-form" novalidate>
+            <label for="task-input">What do you need to do?</label>
+            <div class="task-entry">
+              <input
+                id="task-input"
+                name="task"
+                maxlength="160"
+                placeholder="e.g. Revise COS 106 lecture notes"
+                required
+                aria-describedby="task-error"
+              /><button class="button" type="submit">
+                Add task <span aria-hidden="true">+</span>
+              </button>
+            </div>
+            <p id="task-error" class="error"></p>
+          </form>
+          <p id="task-count" class="task-count"></p>
+          <ul id="task-list" class="task-list" aria-label="Academic tasks"></ul>
+          <p id="empty-tasks" class="empty-state">
+            Your next step starts here.<br /><span
+              >Add your first academic task above.</span
+            >
+          </p>
+          <p id="planner-status" role="status" class="helper"></p>
+        </div>
+        <aside class="note">
+          <p class="eyebrow">ONE THING AT A TIME</p>
+          <h2>Progress over perfection.</h2>
+          <ol>
+            <li>Break big assignments into small tasks.</li>
+            <li>Start with one achievable goal.</li>
+            <li>Mark it complete and keep going.</li>
+          </ol>
+          <p class="helper">
+            Tasks are saved in this browser when local storage is available.
+            Avoid storing sensitive information on a shared device.
+          </p>
+        </aside>
+      </section>
+      <noscript
+        ><p class="note">
+          Enable JavaScript to add, complete and delete tasks.
+        </p></noscript
+      >
+    </main>
+    <footer class="site-footer wrap">
+      <p>© 2026 Chukwunonso <span>•</span> Learning. Building. Growing.</p>
+    </footer>
+  </body>
+</html>
